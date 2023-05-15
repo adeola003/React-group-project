@@ -1,13 +1,18 @@
+import {
+  BrowserRouter, Routes, Route,
+} from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Myprofile from './components/Myprofile';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello react!
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/profile" element={<Myprofile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
