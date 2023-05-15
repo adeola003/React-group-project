@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Bookstore</b></h3>
+  <h3><b>Travelers's Hub</b></h3>
 
 </div>
 
@@ -32,9 +32,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Bookstore] <a name="about-project"></a>
+# 📖 [Traveler's_Hub] <a name="about-project"></a>
 
-**[Bookstore]** This project is an web app that replicate a bookstore and give user possibility to add and remove books using react-redux, and an API for interractions.
+**[Traveler's_Hub]** This project is an web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="HTML, CSS, Javascript, React & redux"></a>
 
@@ -55,10 +55,12 @@
 
 ### Key Features <a name="key-features"></a>
 
-- [x] Create a simple bookstore web app
-- [x] Add all necessary fetures for adding and removing books.
+- [x] Created a web app using react-redux
+- [x] Added all necessary fetures for displaying Rockets and Missions.
 - [x] Used React and Redux technology.
-- [x] Used `axios` to POST, GET and DELETE data from the API.
+- [x] Used `axios` to fetch data from the API.
+- [x] Used store, actions and reducers in React.
+- [x] Used React hooks.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,8 +92,8 @@ Open terminal on the same folder of the project and run:
 Clone this repository to your desired folder:
 
 ```sh
-  git https://github.com/adeola003/bookstore.git
-  cd bookstore
+  git https://github.com/adeola003/React-group-project.git
+  cd React-group-project
 ```
 
 ### Install
@@ -153,6 +155,10 @@ To check for js errors run:
 - Twitter: [@twitterhandle](https://twitter.com/khadaf6)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdel-khafid-salaou-a18396161)
 
+👤 **Yacoubou Seidou**
+
+- GitHub: [@Yacoubou-seidou](https://github.com/Yacoubou-seidou)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -171,7 +177,7 @@ To check for js errors run:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [https://github.com/adeola003/bookstore/issues](issue page).
+Feel free to check the [issue page](https://github.com/adeola003/React-group-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
