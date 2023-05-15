@@ -33,3 +33,13 @@ body {
 .bar {
   width: 100%;
 }
+
+.navbar .link_list li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.navbar .link_list li a.active {
+  color: black;
+  font-weight: 900;
+}
