@@ -1,5 +1,7 @@
 import React from 'react';
 import planet from './assets/planet.png';
+import { NavLink } from 'react-router-dom';
+import Rockets from './Rockets';
 
 const Navbar = () => (
   <header>
@@ -9,10 +11,22 @@ const Navbar = () => (
         <h1 className="title">Space traveler&apos;s Hub</h1>
       </div>
       <ul className="link_list">
-        <li><a href="/">Rockets</a></li>
-        <li><a href="/">Missions</a></li>
-        <span>|</span>
-        <li><a href="/profile">My profile</a></li>
+        <li>
+            <NavLink exact to="/" activeClassName="active">
+              Rockets
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/missions" activeClassName="active">
+              Missions
+            </NavLink>
+          </li>
+          <span>|</span>
+          <li>
+            <NavLink to="/profile" activeClassName="active">
+              My profile
+            </NavLink>
+          </li>
       </ul>
     </nav>
     <hr className="bar" />
