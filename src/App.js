@@ -4,6 +4,7 @@ import {
 import Navbar from './components/Navbar';
 import Myprofile from './components/Myprofile';
 import Rockets from './components/Rockets';
+import Missions from './components/Missions';
 import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Rockets />} />
-        {/* <Route path="/missions" element={<Missions />} /> */}
+        <Route path="/missions" element={<Missions />} />
         <Route path="/profile" element={<Myprofile />} />
       </Routes>
     </BrowserRouter>
