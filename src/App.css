@@ -43,3 +43,43 @@ body {
   color: black;
   font-weight: 900;
 }
+
+/* rockets section */
+
+.card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 200px;
+  height: auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.reservation-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
