@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { getMissions, joinMissions } from '../redux/Missions/missionsSlice';
+import { getMissions, joinMissions, leaveMissions } from '../redux/Missions/missionsSlice';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -35,7 +35,7 @@ const Missions = () => {
               </td>
               <td>
                 {mission.reserved ? (
-                  <button type="button" className="btn_leave_mission">Leave Mission</button>
+                  <button type="button" className="btn_leave_mission" onClick={() => dispatch(leaveMissions(mission.mission_id))}>Leave Mission</button>
                 ) : (
                   <button type="button" className="btn_join_mission" onClick={() => dispatch(joinMissions(mission.mission_id))}>Join Mission</button>
                 )}
