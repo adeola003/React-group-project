@@ -82,7 +82,30 @@ body {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  transition: transform 0.3s;
 }
+
+.reservation-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.cancel-btn {
+  background-color: #808080;
+  color: #90ee90;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cancel-btn:hover {
+  background-color: #5f5f5f;
+  color: #c8ffc8;
+  transform: scale(1.1);
+}
+
+/* .profile_container */
 
 .table {
   width: 100%;
