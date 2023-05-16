@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux';
 const MyProfile = () => {
   const missions = useSelector((store) => store.missions.missions);
   const reserved = missions.filter((mission) => mission.reserved !== false);
+  const rockets = useSelector((store) => store.rockets.rocketsList);
+  const resRockets = rockets.filter((rocket) => rocket.reserved !== false);
 
   return (
     <section className="profile_container">
@@ -21,6 +23,20 @@ const MyProfile = () => {
             </tbody>
           </table>
         ) : <p>No missions reserved</p>}
+      </div>
+      <div className="reserved_content rockets-cont">
+        <h2 className="title">My Rockets</h2>
+        {resRockets && resRockets.length > 0 ? (
+          <table className="missions_list rockets-list">
+            <tbody>
+              {resRockets.map((rocket) => (
+                <tr key={rocket.id}>
+                  <td>{rocket.name}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        ) : <p>No rockets reserved</p>}
       </div>
 
     </section>
