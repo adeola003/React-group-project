@@ -1,6 +1,4 @@
 import { useSelector } from 'react-redux';
-// import { useEffect } from 'react';
-// import { getMissions } from '../redux/Missions/missionsSlice';
 
 const MyProfile = () => {
   const missions = useSelector((store) => store.missions.missions);

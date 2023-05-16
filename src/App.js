@@ -4,6 +4,7 @@ import {
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getMissions } from './redux/Missions/missionsSlice';
+import { fetchRockets } from './redux/Rockets/rocketsSlice';
 import Navbar from './components/Navbar';
 import MyProfile from './components/Myprofile';
 import Rockets from './components/Rockets';
@@ -14,6 +15,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMissions());
+    dispatch(fetchRockets());
   }, [dispatch]);
   return (
     <BrowserRouter>
