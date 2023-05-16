@@ -36,11 +36,11 @@ body {
 
 .navbar .link_list li a {
   text-decoration: none;
-  color: gray;
+  color: rgba(0, 0, 255, 0.66);
 }
 
 .navbar .link_list li a.active {
-  color: black;
+  color: blue;
   font-weight: 900;
 }
 
@@ -84,18 +84,27 @@ body {
   cursor: pointer;
 }
 
-/* Missions.module.css */
-
 .table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #ddd;
   font-size: 0.9em;
   margin: 0 auto;
 }
 
-.table thead th {
+.missions_list th {
   background-color: #f2f2f2;
+}
+
+.missions_list th,
+.missions_list td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.table thead th {
+  background-color: white;
+  border: 2px solid #dee2e6;
   color: #333;
   text-align: left;
   padding: 12px;
@@ -103,6 +112,14 @@ body {
 
 .table tbody tr {
   border-bottom: 1px solid #ddd;
+}
+
+.missions_list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.missions_list tr:hover {
+  background-color: #ddd;
 }
 
 .table tbody tr:nth-of-type(even) {
@@ -115,10 +132,11 @@ body {
 
 .table td {
   padding: 12px;
+  border: 2px solid #dee2e6;
 }
 
 .table td span.not_a_member {
-  background-color: red;
+  background-color: #6d757d;
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
@@ -132,7 +150,7 @@ body {
 }
 
 .table td span.active_member {
-  background-color: green;
+  background-color: #18a2b8;
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
@@ -140,31 +158,36 @@ body {
 }
 
 .table td button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 8px 12px;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: red;
+  border: 1px solid black;
+  width: 150px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.table td button:hover {
-  background-color: #3e8e41;
-}
-
-.table td button.btn_leavemission {
-  background-color: #f44336;
-}
-
-.table td button.btn_leave_mission:hover {
-  background-color: #d32f2f;
-}
-
 .table td button.btn_join_mission {
-  background-color: #4caf50;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 4px 8px;
 }
 
-.table td button.btn_join_mission:hover {
-  background-color: #3e8e41;
+.profile_container {
+  display: flex;
+  gap: 30px;
+}
+
+.reserved_content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.missions_list {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
