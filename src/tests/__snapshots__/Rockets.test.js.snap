@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Rockets component renders correctly 1`] = `
+<div
+  className="loading"
+>
+  <h1>
+    Loading...
+  </h1>
+</div>
+`;

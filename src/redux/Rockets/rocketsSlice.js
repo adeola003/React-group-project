@@ -57,7 +57,6 @@ const rocketsSlice = createSlice({
       state.isLoading = true;
     },
     [fetchRockets.fulfilled]: (state, action) => {
-      console.log(action.payload);
       state.isLoading = false;
       state.rocketsList = action.payload;
     },
