@@ -36,10 +36,181 @@ body {
 
 .navbar .link_list li a {
   text-decoration: none;
-  color: gray;
+  color: rgba(0, 0, 255, 0.66);
 }
 
 .navbar .link_list li a.active {
-  color: black;
+  color: blue;
   font-weight: 900;
+}
+
+/* rockets section */
+
+.card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 210px;
+  height: auto;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.reservation-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.reservation-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.cancel-btn {
+  background-color: #808080;
+  color: #90ee90;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cancel-btn:hover {
+  background-color: #5f5f5f;
+  color: #c8ffc8;
+  transform: scale(1.1);
+}
+
+/* .profile_container */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin: 0 auto;
+}
+
+.missions_list th {
+  background-color: #f2f2f2;
+}
+
+.missions_list th,
+.missions_list td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.table thead th {
+  background-color: white;
+  border: 2px solid #dee2e6;
+  color: #333;
+  text-align: left;
+  padding: 12px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.missions_list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.missions_list tr:hover {
+  background-color: #ddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: none;
+}
+
+.table td {
+  padding: 12px;
+  border: 2px solid #dee2e6;
+}
+
+.table td span.not_a_member {
+  background-color: #6d757d;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status {
+  width: 15%;
+  text-align: center;
+  padding: 0 !important;
+}
+
+.table td span.active_member {
+  background-color: #18a2b8;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.table td button {
+  padding: 4px 8px;
+  background-color: transparent;
+  color: red;
+  border: 1px solid black;
+  width: 150px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table td button.btn_join_mission {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  padding: 4px 8px;
+}
+
+.profile_container {
+  display: flex;
+  gap: 30px;
+}
+
+.reserved_content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.missions_list {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
